@@ -1,0 +1,20 @@
+<div>
+  <h1>
+    Bookheads
+  </h1>
+</div>
+
+<div>
+  <form>
+    <input type="text" placeholder="find the book you're looking for">
+    <button>find</button>
+  </form>
+</div>
+
+<div>
+  <ul>
+    <li *ngFor="let book of books | async">
+      <a target="_blank">{{ book.title }}</a>
+    </li>
+  </ul> 
+</div>
